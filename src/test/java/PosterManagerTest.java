@@ -33,7 +33,8 @@ public class PosterManagerTest {
         manager.savePoster(poster5);
         manager.savePoster(poster6);
         PosterProperties[] expected = {poster6, poster5, poster4, poster3, poster2, poster1};
-        PosterProperties[] actual = manager.findLast();;
+        PosterProperties[] actual = manager.findLast();
+        ;
         Assertions.assertArrayEquals(expected, actual);
     }
 
