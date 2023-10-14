@@ -32,9 +32,8 @@ public class PosterManagerTest {
         manager.savePoster(poster4);
         manager.savePoster(poster5);
         manager.savePoster(poster6);
-        manager.findLast();
         PosterProperties[] expected = {poster6, poster5, poster4, poster3, poster2, poster1};
-        PosterProperties[] actual = manager.findAll();
+        PosterProperties[] actual = manager.findLast();;
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -48,9 +47,8 @@ public class PosterManagerTest {
         manager.savePoster(poster5);
         manager.savePoster(poster6);
         manager.savePoster(poster7);
-        manager.findLast();
         PosterProperties[] expected = {poster7, poster6, poster5, poster4, poster3, poster2, poster1};
-        PosterProperties[] actual = manager.findAll();
+        PosterProperties[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -64,9 +62,8 @@ public class PosterManagerTest {
         manager.savePoster(poster5);
         manager.savePoster(poster6);
         manager.savePoster(poster7);
-        manager.findLast();
         PosterProperties[] expected = {poster7, poster6, poster5, poster4, poster3, poster2};
-        PosterProperties[] actual = manager.findAll();
+        PosterProperties[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -77,9 +74,8 @@ public class PosterManagerTest {
         manager.savePoster(poster2);
         manager.savePoster(poster3);
         manager.savePoster(poster4);
-        manager.findLast();
         PosterProperties[] expected = {poster4, poster3, poster2, poster1};
-        PosterProperties[] actual = manager.findAll();
+        PosterProperties[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -91,9 +87,8 @@ public class PosterManagerTest {
         manager.savePoster(poster3);
         manager.savePoster(poster4);
         manager.savePoster(poster5);
-        manager.findLast();
         PosterProperties[] expected = {poster5, poster4, poster3, poster2, poster1};
-        PosterProperties[] actual = manager.findAll();
+        PosterProperties[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -106,9 +101,8 @@ public class PosterManagerTest {
         manager.savePoster(poster4);
         manager.savePoster(poster5);
         manager.savePoster(poster6);
-        manager.findLast();
         PosterProperties[] expected = {poster6, poster5, poster4, poster3, poster2};
-        PosterProperties[] actual = manager.findAll();
+        PosterProperties[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 

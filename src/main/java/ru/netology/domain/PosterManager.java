@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 public class PosterManager {
-    public PosterProperties[] posters = new PosterProperties[0];
+    private PosterProperties[] posters = new PosterProperties[0];
     private int limitPosters = 5;
 
     public PosterManager() {
@@ -31,8 +31,7 @@ public class PosterManager {
         for (int i = 0; i < resultLeight; i++) {
             result[i] = posters[posters.length - 1 - i];
         }
-        posters = result;
-        return posters;
+        return result;
     }
 
     public PosterProperties[] findAll() {
